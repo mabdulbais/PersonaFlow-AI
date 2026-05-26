@@ -148,7 +148,7 @@ export function InterviewCoach({ language }: InterviewCoachProps) {
               <Quote size={36} />
             </div>
             <p
-              className="text-[20px] leading-[1.5] font-serif italic relative pl-10"
+              className="text-[20px] leading-[1.5] font-light relative pl-10"
               style={{ color: C.text }}
               dir={dir}
             >
@@ -298,7 +298,7 @@ export function InterviewCoach({ language }: InterviewCoachProps) {
                 </span>
               </div>
               <p
-                className="relative text-[14.5px] leading-[1.8] font-serif italic"
+                className="relative text-[14.5px] leading-[1.8] font-light"
                 style={{ color: C.text }}
                 dir={dir}
               >

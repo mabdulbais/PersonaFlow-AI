@@ -166,7 +166,7 @@ export function ToneLibrary({ language }: ToneLibraryProps) {
             {results[active] && (
               <div className="relative">
                 <p
-                  className="text-[16px] leading-[1.8] font-serif italic mb-5"
+                  className="text-[16px] leading-[1.8] font-light mb-5"
                   style={{ color: C.text }}
                   dir={dir}
                 >

@@ -1,26 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import {
-  Manrope,
-  Instrument_Serif,
-  Noto_Nastaliq_Urdu,
-  Noto_Naskh_Arabic,
-} from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
+import { Noto_Nastaliq_Urdu, Noto_Naskh_Arabic } from "next/font/google";
 import "./globals.css";
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-manrope",
-  display: "swap",
-});
-
-const instrumentSerif = Instrument_Serif({
-  subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
-  variable: "--font-instrument-serif",
-  display: "swap",
-});
 
 const nastaliq = Noto_Nastaliq_Urdu({
   subsets: ["arabic"],
@@ -43,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0E0E10",
+  themeColor: "#0A0E18",
   width: "device-width",
   initialScale: 1,
 };
@@ -57,9 +39,9 @@ export default function RootLayout({
     <html
       lang="en"
       dir="ltr"
-      className={`${manrope.variable} ${instrumentSerif.variable} ${nastaliq.variable} ${naskh.variable}`}
+      className={`${GeistSans.variable} ${GeistMono.variable} ${nastaliq.variable} ${naskh.variable}`}
     >
-      <body className="font-sans bg-bg text-text min-h-screen">
+      <body className="font-sans bg-bg text-text min-h-screen antialiased">
         {children}
       </body>
     </html>

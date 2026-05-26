@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --bg:         #0E0E10;
-  --surface:    #16161A;
-  --card:       #1C1C22;
-  --card-hi:    #22222A;
-  --line:       #2A2A33;
-  --line-soft:  #1F1F26;
-  --text:       #F5F1E8;
-  --text-2:     #A8A29B;
-  --text-3:     #6B6760;
-  --accent:     #FF6B47;
-  --accent-sft: #FF6B4722;
-  --sage:       #94A87A;
-  --amber:      #D4A574;
-  --ink:        #7D8FA8;
-  --rose:       #C97B7B;
+  --bg:         #0A0E18;
+  --surface:    #11162A;
+  --card:       #161B30;
+  --card-hi:    #1D2440;
+  --line:       #2A3050;
+  --line-soft:  #1A1F38;
+  --text:       #E8ECF5;
+  --text-2:     #A3AAC2;
+  --text-3:     #6B7280;
+  --accent:     #6366F1;
+  --accent-sft: #6366F122;
+  --sage:       #10B981;
+  --amber:      #F59E0B;
+  --ink:        #94A3B8;
+  --rose:       #EF4444;
 }
 
 html, body {
@@ -35,6 +35,11 @@ input::placeholder {
 ::-webkit-scrollbar       { width: 8px; height: 8px; }
 ::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(8px); }

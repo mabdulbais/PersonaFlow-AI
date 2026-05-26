@@ -28,7 +28,7 @@ export function TopBar({ active }: TopBarProps) {
           <span style={{ color: C.text2 }}>{current.label}</span>
         </div>
         <h1
-          className="text-[36px] leading-none tracking-tight font-serif italic"
+          className="text-[36px] leading-none tracking-tight font-semibold"
           style={{ color: C.text }}
         >
           {current.label}

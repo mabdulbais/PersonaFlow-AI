@@ -381,7 +381,7 @@ function AnalysisResult({ data, language }: AnalysisResultProps) {
           </button>
         </div>
         <p
-          className="relative text-[15px] leading-[1.75] font-serif italic"
+          className="relative text-[15px] leading-[1.75] font-light"
           style={{ color: C.text }}
           dir={dir}
         >

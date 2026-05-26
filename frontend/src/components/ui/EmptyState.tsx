@@ -28,7 +28,7 @@ export function EmptyState({ icon: Icon, title, body, minHeight = 520 }: EmptySt
         <Icon size={18} style={{ color: C.accent }} />
       </div>
       <p
-        className="text-[22px] font-serif italic mb-2"
+        className="text-[22px] font-semibold tracking-tight mb-2"
         style={{ color: C.text }}
       >
         {title}

@@ -46,7 +46,7 @@ export function Sidebar({ active, setActive, language, setLanguage }: SidebarPro
           </span>
         </div>
         <p
-          className="text-[11.5px] leading-snug mt-3 font-serif italic"
+          className="text-[11.5px] leading-snug mt-3 font-light"
           style={{ color: C.text3 }}
         >
           Adaptive intelligence for human communication.

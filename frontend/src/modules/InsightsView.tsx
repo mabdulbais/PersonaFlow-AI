@@ -31,7 +31,7 @@ export function InsightsView({ shared }: InsightsViewProps) {
         >
           <Eye size={20} style={{ color: C.text3 }} className="mb-4" />
           <p
-            className="text-[20px] font-serif italic mb-2"
+            className="text-[20px] font-semibold tracking-tight mb-2"
             style={{ color: C.text }}
           >
             No reading yet.

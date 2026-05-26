@@ -8,7 +8,7 @@ export function Score({ value }: ScoreProps) {
   return (
     <div className="flex items-baseline gap-1">
       <span
-        className="text-[88px] leading-none tracking-tighter font-serif italic"
+        className="text-[88px] leading-none tracking-tighter font-mono font-light"
         style={{ color: C.text }}
       >
         {value}

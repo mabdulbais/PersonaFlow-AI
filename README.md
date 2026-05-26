@@ -2,10 +2,7 @@
 
 # PersonaFlow AI
 
-### *Communication, attuned.*
-
-## Summary
-Adaptive AI that reads **tone**, **emotion**, and **intent** — then rewrites your words to land exactly how you mean them.
+## Summary: Adaptive AI that reads **tone**, **emotion**, and **intent** — then rewrites your words to land exactly how you mean them.
 
 **English · اردو · العربية**
 

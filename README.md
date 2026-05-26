@@ -15,11 +15,11 @@ Adaptive AI that reads **tone**, **emotion**, and **intent** — then rewrites y
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB)
 ![Anthropic](https://img.shields.io/badge/Anthropic-API-FF6B47)
 
-[**Live demo →**](#) · [Pitch deck](docs/pitch-deck.md) · [Architecture](#architecture) · [Run locally](#run-locally)
+[**Live demo →**](https://persona-flow-ai.vercel.app/) · [Pitch deck](docs/pitch-deck.md) · [Architecture](#architecture) · [Run locally](#run-locally)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmabdulbais%2FPersonaFlow-AI&env=ANTHROPIC_API_KEY&envDescription=Anthropic%20API%20key%20%E2%80%94%20server-only&envLink=https%3A%2F%2Fconsole.anthropic.com&project-name=personaflow-ai&repository-name=PersonaFlow-AI&root-directory=frontend)
 
-<sub>Live-demo URL above is a placeholder until you deploy. The Vercel button deploys the `frontend/` directory with `ANTHROPIC_API_KEY` pre-wired as an env var. See [Run locally](#run-locally) for the full stack including FastAPI.</sub>
+<sub>The Vercel button deploys your own copy of the `frontend/` directory with `ANTHROPIC_API_KEY` pre-wired as an env var. See [Run locally](#run-locally) for the full stack including FastAPI.</sub>
 
 <!-- Replace with docs/screenshots/hero.png once captured -->
 <!-- ![PersonaFlow AI — hero](docs/screenshots/hero.png) -->

@@ -171,8 +171,6 @@ Voice tone (Whisper + audio features). Meeting transcript summarizer. Team compa
 
 **Abdul Bais**
 
-*[Add one line of context before presenting — what brought you here, what you care about, what you've shipped.]*
-
 *Solo course project.*
 
 > Speaker notes: Fill in the one-line context before the talk. Lean into the breadth — full-stack, design, AI, multilingual — and the multilingual angle is the most credible if it's grounded in lived experience.

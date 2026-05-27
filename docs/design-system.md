@@ -1,71 +1,73 @@
 # Design System
 
-The PersonaFlow visual language. Every new component and every piece of marketing copy should pass these constraints.
+The PersonaFlow visual language — codename **Cobalt**. Every new component and every piece of marketing copy should pass these constraints.
 
 ## Aesthetic direction
 
-**Editorial dark.** Reads like a thoughtful magazine about communication, not a SaaS dashboard. Restraint is the point. Bold typography, hairline borders, generous whitespace, a single accent color that punctuates rather than decorates.
+**Modern dark, no editorial flourish.** Reads like a 2025 AI tool — Linear, Vercel — not a magazine. Cool charcoal background, a single electric-indigo accent that punctuates rather than decorates, geometric sans typography end-to-end. No italic, no serif, no warmth.
 
 ## Colors
 
 ### Tokens
 
 ```css
---bg:        #0E0E10;  /* primary background — deep ink */
---surface:   #16161A;  /* secondary surface */
---card:      #1C1C22;  /* card background */
---card-hi:   #22222A;  /* elevated card */
---line:      #2A2A33;  /* borders */
---line-soft: #1F1F26;  /* hairline dividers */
+--bg:         #0A0E18;  /* primary background — cool charcoal */
+--surface:    #11162A;  /* secondary surface */
+--card:       #161B30;  /* card background */
+--card-hi:    #1D2440;  /* elevated card */
+--line:       #2A3050;  /* borders */
+--line-soft:  #1A1F38;  /* hairline dividers */
 
---text:      #F5F1E8;  /* primary text — warm cream */
---text-2:    #A8A29B;  /* secondary text */
---text-3:    #6B6760;  /* tertiary text / labels */
+--text:       #E8ECF5;  /* primary text — clean white */
+--text-2:     #A3AAC2;  /* secondary text */
+--text-3:     #6B7280;  /* tertiary text / labels */
 
---accent:    #FF6B47;  /* coral — single accent */
---accent-sft:#FF6B4722;/* coral, 22% alpha */
+--accent:     #6366F1;  /* electric indigo — single accent */
+--accent-sft: #6366F122;/* indigo, 22% alpha */
 
---sage:      #94A87A;  /* success / strengths only */
---amber:     #D4A574;  /* warning / suggestions only */
---ink:       #7D8FA8;  /* cool secondary, sparingly */
---rose:      #C97B7B;  /* errors only */
+--sage:       #10B981;  /* success / strengths only */
+--amber:      #F59E0B;  /* warning / suggestions only */
+--ink:        #94A3B8;  /* cool slate, sparingly */
+--rose:       #EF4444;  /* errors only */
 ```
 
 ### Rules
 
-- Coral is the **only** decorative accent. Never introduce purple, blue, or green for visual variety.
+- Indigo is the **only** decorative accent. Never introduce orange, purple, green, or any second accent for visual variety.
 - Sage = positive findings. Amber = improvements needed. Don't use them ornamentally.
 - Surface layering: `bg → surface → card → card-hi`. Borders, not shadows, separate layers.
 
 ## Typography
 
-### Fonts (Google Fonts)
+### Fonts
 
-- **Display:** `Instrument Serif` — italic for emotional weight
-- **Body / UI:** `Manrope` — weights 300, 400, 500, 600
-- **Urdu:** `Noto Nastaliq Urdu`
-- **Arabic:** `Noto Naskh Arabic`
+- **Sans (everything):** `Geist Sans` via the `geist` npm package — weights 300, 400, 500, 600, 700
+- **Mono (numbers, labels, codes):** `Geist Mono`
+- **Urdu:** `Noto Nastaliq Urdu` (Google Fonts)
+- **Arabic:** `Noto Naskh Arabic` (Google Fonts)
 
 ### Forbidden
 
-Inter · Roboto · Arial · Helvetica · system-ui as primary fonts. Always.
+- No italic serif anywhere. Use weight and color for emphasis, not slant.
+- No system-ui as a primary font (Geist is required for chrome).
+- No second sans-serif. One sans family for the whole product.
 
 ### Pairings
 
 | Element | Font | Weight | Size | Notes |
 |---|---|---|---|---|
-| Page title | Manrope + Instrument Serif italic | 300 | clamp(34px, 5vw, 64px) | Mix: "Communication, *attuned.*" |
-| H1 hero | Manrope | 300 | clamp(56px, 11vw, 156px) | letter-spacing: -0.045em |
-| Section title | Manrope | 300 | clamp(34px, 5vw, 64px) | tracking-tight |
-| Card title | Instrument Serif italic | 400 | 32px | for refined / AI output |
-| Body | Manrope | 400 | 14-17px | line-height 1.5-1.7 |
-| Label / eyebrow | Manrope | 500 | 10-11px | uppercase, tracking 0.22-0.3em |
-| Numbers / stats | Instrument Serif italic | 400 | varies | gives weight |
-| AI-generated text | Instrument Serif italic | 400 | 15-17px | literary feel |
+| Page title (TopBar h1) | Geist Sans | 600 | 36px | `tracking-tight` |
+| Hero title (landing) | Geist Sans | 300 | clamp(56px, 11vw, 156px) | `letter-spacing: -0.045em` |
+| Section title | Geist Sans | 600 | clamp(34px, 5vw, 64px) | `tracking-tight` |
+| Card title / empty state | Geist Sans | 600 | 20-22px | `tracking-tight` |
+| Body | Geist Sans | 400 | 14-17px | `line-height: 1.5-1.7` |
+| Label / eyebrow | Geist Sans | 500 | 10-11px | `uppercase`, `tracking-[0.22-0.3em]` |
+| Numbers / stats | Geist Mono | 300 | varies | feels like data, not editorial |
+| AI-generated text | Geist Sans | 300 | 15-17px | light weight gives the quote feel — no italic |
 
-### Tone
+### Tone (of voice)
 
-Considered. Editorial. Restrained. Short sentences. Never cute, never breathless, never salesy.
+Considered. Restrained. Decisive. Short sentences. Never cute, never breathless, never salesy.
 
 ## Iconography
 
@@ -99,15 +101,15 @@ Considered. Editorial. Restrained. Short sentences. Never cute, never breathless
 ### Section header
 
 ```
-[serif italic number]  [eyebrow label]  ────────────────────
-01                     CHAPTER LABEL
+[mono number]  [eyebrow label]  ────────────────────
+01             CHAPTER LABEL
 ```
 
 ### Score display
 
 ```
-88   /100
-↑ serif italic, large
+88    /100
+↑ Geist Mono, light weight, 88px, tracking-tighter
 ```
 
 ### Pill
@@ -120,20 +122,24 @@ Considered. Editorial. Restrained. Short sentences. Never cute, never breathless
 ### Quote / AI output card
 
 ```
-[gradient backdrop with coral glow in corner]
+[gradient backdrop with indigo glow in corner]
 Wand2 icon · REFINED VERSION
-"<italic serif text>"
+"<light-weight Geist text, slightly larger size>"
 ```
 
 ## Backgrounds
 
-- Subtle SVG noise overlay across the whole page (~2.5% opacity)
-- Radial coral gradient in heroes and CTA sections (50% opacity, 800-900px circle)
-- No purple gradients. No animated mesh gradients. No glassmorphism.
+- Subtle SVG noise overlay across the whole page (~2.5% opacity).
+- Radial **indigo** gradient in heroes and CTA sections (50% opacity, 800-900px circle).
+- No purple gradients, no animated mesh gradients, no glassmorphism.
 
 ## Layout primitives
 
-- Sidebar nav (300px) with numbered modules on desktop
-- Top tab strip on mobile
-- Max content width: 1240px
-- Asymmetric grids when there are 5+ items (don't force a 3×n)
+- Sidebar nav (300px) with numbered modules on desktop.
+- Top tab strip on mobile.
+- Max content width: 1240px.
+- Asymmetric grids when there are 5+ items (don't force a 3×n).
+
+## Favicon / brand mark
+
+The mark is a solid indigo circle with a smaller bg-colored circle concentric inside — see `frontend/app/icon.svg` and the Sidebar brand. Inner circle is exactly the page background color so it reads as a void, not a dot.

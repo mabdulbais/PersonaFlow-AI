@@ -2,7 +2,7 @@
 
 > Course presentation deck. Editorial draft.
 > Slide breaks marked with `---`. Speaker notes follow each slide as a blockquote.
-> Tone: considered, restrained, italic serif for emotional weight. Short sentences. Never cute, never breathless, never salesy.
+> Tone: considered, restrained, weight and color for emphasis. Short sentences. Never cute, never breathless, never salesy.
 
 ---
 
